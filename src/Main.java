@@ -1,24 +1,24 @@
 public class Main {
     public static void main(String[] args) {
-        int AccountBalance = 100; // сумма счета
-        int BalanceReplenishment = 1100; // пополнение баланса
-        int BonusRubles = 100; // бонусные рубли за 1 рубль пополнения FinalScore итоговый счет numberOfBonusRubles
+        int accountBalance = 100; // сумма счета
+        int balanceReplenishment = 1100; // пополнение баланса
+        int bonusRubles = 100; // бонусные рубли за 1 рубль пополнения FinalScore итоговый счет numberOfBonusRubles
 
-        int FinalScore;
-        if (BalanceReplenishment > 1000) {
-            FinalScore = (BalanceReplenishment / BonusRubles) + AccountBalance + BalanceReplenishment;
+        int finalScore;
+        if (balanceReplenishment > 1000) {
+            finalScore = (balanceReplenishment / bonusRubles) + accountBalance + balanceReplenishment;
         } else {
-            FinalScore = (AccountBalance + BalanceReplenishment);
+            finalScore = (accountBalance + balanceReplenishment);
         }
 
         int numberOfBonusRubles;
-        if (BalanceReplenishment > 1000) {
-            numberOfBonusRubles = (BalanceReplenishment / BonusRubles);
+        if (balanceReplenishment > 1000) {
+            numberOfBonusRubles = (balanceReplenishment / bonusRubles);
         } else {
             numberOfBonusRubles = (0);
         }
 
-        System.out.println(" Итоговый счет составляет " + FinalScore);
+        System.out.println(" Итоговый счет составляет " + finalScore);
         System.out.println(" Итого бонусов к зачислению " + numberOfBonusRubles);
 
     }
